@@ -8,7 +8,7 @@ global styles
 html, body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  background-color: #fff;
+  background-color: #ffffff;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -21,7 +21,7 @@ a.main-button-slider {
   padding: 12px 20px;
   background-color: #ff589e;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -32,6 +32,195 @@ a.main-button-slider {
 
 a.main-button-slider:hover {
   background-color: #8261ee;
+}
+
+a.main-button {
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #8261ee;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-decoration: none !important;
+}
+
+a.main-button:hover {
+  background-color: #ff589e;
+}
+
+.left-heading.light .section-title {
+  color: #ffffff;
+}
+
+.left-heading .section-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 42px;
+  color: #1e1e1e;
+  letter-spacing: 0.25px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.center-heading {
+  text-align: center;
+}
+
+.center-heading .section-title {
+  font-weight: 500;
+  font-size: 28px;
+  color: #1e1e1e;
+  letter-spacing: 1.75px;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+
+.center-heading.colored .section-title {
+  color: #ffffff;
+}
+
+.center-text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: #777;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+.center-text.colored {
+  color: #fff;
+}
+
+.center-text p {
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.left-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #777;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
+.left-text.light {
+  color: #fff;
+}
+
+.left-text p {
+  margin-bottom: 30px;
+}
+
+.left-text p.dark {
+  color: #3B566E;
+}
+
+.padding-bottom-top-60 {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+.padding-bottom-80 {
+  padding-bottom: 80px !important;
+}
+
+.padding-bottom-100 {
+  padding-bottom: 100px !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #eee !important;
+}
+
+.mbottom-30 {
+  margin-bottom: 30px !important;
+}
+
+.align-self-center {
+  -ms-flex-item-align: center !important;
+  align-self: center !important;
+}
+
+.align-self-bottom {
+  -ms-flex-item-align: flex-end !important;
+  align-self: flex-end !important;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0px !important;
+}
+
+.padding-top-0 {
+  padding-top: 0px !important;
+}
+
+.padding-top-80 {
+  padding-top: 80px !important;
+}
+
+.padding-top-70 {
+  padding-top: 70px !important;
+}
+
+.padding-top-20 {
+  padding-top: 20px !important;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0px !important;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px !important;
+}
+
+.margin-top-30 {
+  margin-top: 30px !important;
+}
+
+.margin-top-15 {
+  margin-top: 15px !important;
+}
+
+.margin-bottom-45 {
+  margin-bottom: 45px !important;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px !important;
+}
+
+.margin-bottom-60 {
+  margin-bottom: 60px !important;
+}
+
+.margin-bottom-100 {
+  margin-bottom: 100px !important;
+}
+
+@media (max-width: 991px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .mobile-top-fix {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .mobile-bottom-fix {
+    margin-bottom: 30px;
+  }
+  .mobile-bottom-fix-big {
+    margin-bottom: 60px;
+  }
 }
 
 /* 
@@ -48,7 +237,7 @@ preloader
   bottom: 0;
   position: fixed;
   z-index: 9999;
-  color: #fff;
+  color: #ffffff;
 }
 
 #preloader .jumper {
@@ -64,7 +253,7 @@ preloader
 }
 
 #preloader .jumper > div {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 10px;
   height: 10px;
   border-radius: 100%;
@@ -140,7 +329,7 @@ header
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   border-radius: 40px;
   min-height: 80px;
-  background: #fff;
+  background: #ffffff;
 }
 
 .header-area .main-nav span {
@@ -184,7 +373,7 @@ header
   display: block;
   font-weight: 500;
   font-size: 15px;
-  color: #fff;
+  color: #ffffff;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -339,7 +528,7 @@ header
     line-height: 50px !important;
     padding: 0px !important;
     border: none !important;
-    background: #fff !important;
+    background: #ffffff !important;
     color: #3B566E !important;
   }
   .header-area .main-nav .nav {
@@ -358,7 +547,7 @@ header
   }
   .header-area .main-nav .nav li {
     width: 100%;
-    background: #fff;
+    background: #ffffff;
     border-bottom: 1px solid #eee;
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -368,11 +557,11 @@ header
     line-height: 50px !important;
     padding: 0px !important;
     border: none !important;
-    background: #fff !important;
+    background: #ffffffff !important;
     color: #3B566E !important;
   }
   .header-area .main-nav .nav li a:hover {
-    background: #eee !important;
+    background: #eeeeee !important;
   }
 }
 
@@ -384,10 +573,10 @@ header
 
 /* 
 ---------------------------------------------
-welcome
+introduction
 --------------------------------------------- 
 */
-.welcome-area {
+.introduction-area {
   overflow: hidden;
   position: relative;
   display: flex;
@@ -400,7 +589,7 @@ welcome
   height: 100vh;
 }
 
-.welcome-area .header-text {
+.introduction-area .header-text {
   position: absolute;
   top: 50%;
   transform: translateY(-55%);
@@ -408,39 +597,39 @@ welcome
   width: 100%;
 }
 
-.welcome-area .header-text h1 {
+.introduction-area .header-text h1 {
   font-weight: 500;
   font-size: 38px;
   line-height: 54px;
   letter-spacing: 1.4px;
   margin-bottom: 30px;
-  color: #fff;
+  color: #ffffff;
 }
 
-.welcome-area .header-text p {
+.introduction-area .header-text p {
   font-weight: 400;
   font-size: 20px;
-  color: #fff;
+  color: #ffffff;
   line-height: 28px;
   letter-spacing: 0.25px;
   margin-bottom: 40px;
   position: relative;
 }
 
-.welcome-area .header-text ol {
+.introduction-area .header-text ol {
   font-weight: 400;
   font-size: 15px;
-  color: #fff;
+  color: #ffffff;
   line-height: 28px;
   letter-spacing: 0.25px;
   margin-bottom: 40px;
   position: relative;
 }
 
-.welcome-area .header-text ul {
+.introduction-area .header-text ul {
   font-weight: 400;
   font-size: 18x;
-  color: #fff;
+  color: #ffffff;
   line-height: 28px;
   letter-spacing: 0.25px;
   margin-bottom: 40px;
@@ -448,76 +637,298 @@ welcome
 }
 
 @media (max-width: 991px) {
-  .welcome-area .header-text {
+  .introduction-area .header-text {
     top: 65% !important;
     transform: perspective(1px) translateY(-60%) !important;
     text-align: center;
   }
-  .welcome-area .header-text h1 {
+  .introduction-area .header-text h1 {
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 15px;
   }
-  .welcome-area .header-text h1 span {
-    color: #fff;
+  .introduction-area .header-text h1 span {
+    color: #ffffff;
   }
-  .welcome-area .header-text p {
+  .introduction-area .header-text p {
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 20px;
   }
 }
 
 @media (max-width: 820px) {
-  .welcome-area .header-text {
+  .introduction-area .header-text {
     top: 65% !important;
     transform: perspective(1px) translateY(-60%) !important;
   }
-   .welcome-area .header-text h1 {
+   .introduction-area .header-text h1 {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 15px;
   }
-  .welcome-area .header-text p {
+  .introduction-area .header-text p {
     margin-bottom: 20px;
   }
 }
 
 @media (max-width: 765px) {
-  .welcome-area {
+  .introduction-area {
     margin-bottom: 100px;
   }
-  .welcome-area .header-text {
+  .introduction-area .header-text {
     top: 50% !important;
     transform: perspective(1px) translateY(-50%) !important;
     text-align: center;
   }
-  .welcome-area .header-text .buttons {
+  .introduction-area .header-text .buttons {
     display: none;
   }
-  .welcome-area .header-text h1 {
+  .introduction-area .header-text h1 {
     font-weight: 600;
     font-size: 24px !important;
     line-height: 30px !important;
     margin-bottom: 30px !important;
   }
-  .welcome-area .header-text h1 span {
-    color: #fff;
+  .introduction-area .header-text h1 span {
+    color: #ffffffff;
   }
-  .welcome-area .header-text p {
+  .introduction-area .header-text p {
     text-align: center;
-    color: #fff;
+    color: #ffffffff;
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 40px;
   }
 } 
 
+/* 
+---------------------------------------------
+features
+--------------------------------------------- 
+*/
+.section {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #f2f2f2;
+/* 
+---------------------------------------------
+application
+--------------------------------------------- 
+*/
+.features-small-item {
+  cursor: pointer;
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.features-small-item:hover .icon {
+  background-color: #ff589e;
+}
+
+.features-small-item .icon {
+  transition: all 0.3s ease 0s;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: auto;
+  position: relative;
+  margin-bottom: 30px;
+  background: #8261ee;
+  border-radius: 50%;
+}
+
+.features-small-item .icon i {
+  font-size: 18px;
+  color: #fff;
+}
+
+.features-small-item .features-title {
+  font-weight: 500;
+  font-size: 18px;
+  color: #1e1e1e;
+  letter-spacing: 0.7px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.features-small-item p {
+  font-weight: 400;
+  font-size: 13px;
+  color: #777;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.features-small-item a {
+  float: right;
+  position: relative;
+  z-index: 2;
+}
+
+.home-feature {
+  padding-bottom: 0px;
+  padding-top: 30px;
+  margin-top: 30px; /* Adjust this value as needed */
+  z-index: 9;
+}
+
+@media (max-width: 991px) {
+  .home-feature {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
   }
+}
+
+/* 
+---------------------------------------------
+main features
+--------------------------------------------- 
+*/
+.main-features {
+  padding: 50px 0;
+}
+
+.feature-item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.feature-title {
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 18px;
+  color: #777;
+}
+
+/* 
+---------------------------------------------
+discovery
+--------------------------------------------- 
+*/
+.discovery-post-thumb {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.discovery-post-thumb.big .img {
+  height: 400px;
+}
+
+.discovery-post-thumb .img {
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  height: 200px;
+}
+
+.discovery-post-thumb .discovery-content {
+  margin-top: -30px;
+  padding-top: 50px;
+}
+
+.discovery-post-thumb h3 {
+  margin-bottom: 20px !important;
+}
+
+.discovery-post-thumb h3 a {
+  font-weight: 500;
+  font-size: 18px;
+  color: #1e1e1e;
+  letter-spacing: 0.25px;
+  line-height: 26px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-decoration: none !important;
+}
+
+.discovery-post-thumb h3 a:hover {
+  color: #ff589e;
+}
+
+.discovery-post-thumb .text {
+  font-weight: 400;
+  font-size: 13px;
+  color: #777;
+  letter-spacing: 0.26px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+.discovery-post-thumb .post-footer span {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #777;
+  padding-left: 30px;
+}
+
+.discovery-post-thumb a.main-button  {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.discovery-list .discovery-post-thumb {
+  text-align: left;
+}
+
+/* 
+---------------------------------------------
+References
+--------------------------------------------- 
+*/
+.section.colored {
+  padding-top: 150px;
+}
+
+/* 
+---------------------------------------------
+footer
+--------------------------------------------- 
+*/
+footer {
+  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+}
+
+footer .gpname {
+  text-align: center;
+  border-top: 1px solid rgba(250,250,250,0.2);
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 0.88px;
+}
+
+@media (max-width: 991px) {
+  footer .text {
+    margin-bottom: 30px;
+  }
+  footer h5 {
+    margin-bottom: 15px;
+  }
+  footer .footer-nav {
+    margin-bottom: 30px;
+  }
+}
