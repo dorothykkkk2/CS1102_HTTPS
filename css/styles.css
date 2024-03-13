@@ -207,6 +207,7 @@ header
   border-radius: 40px;
   min-height: 80px;
   background: #ffffff;
+  position: relative;
 }
 
 .header-area .main-nav .logo {
