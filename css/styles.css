@@ -390,7 +390,7 @@ a.header-button:hover {
   color: #ff589e;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 2500px) {
   .header-area .main-nav .nav li {
     padding-left: 12px;
     padding-right: 12px;
@@ -409,9 +409,6 @@ a.header-button:hover {
   }
   .header-area .container {
     padding: 0px;
-  }
-  .nav li {
-    display: none;
   }
   .header-area .menu-trigger {
     display: block !important;
@@ -453,9 +450,12 @@ a.header-button:hover {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1401px) {
   .header-area .main-nav .nav {
     display: flex !important;
+  }
+  .menu-trigger {
+    display: none;
   }
 }
 
@@ -556,10 +556,14 @@ introduction
   .introduction-area .header-text h1 span {
     color: #ffffff;
   }
-  .introduction-area .header-text p {
+  .introduction-area .header-text p,
+  .introduction-area .header-text .about,
+  .introduction-area .header-text ol,
+  .introduction-area .header-text ul {
     text-align: center;
-    color: #ffffff;
-    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
   }
 }
 
@@ -568,13 +572,16 @@ introduction
     top: 65% !important;
     transform: perspective(1px) translateY(-60%) !important;
   }
-   .introduction-area .header-text h1 {
+  .introduction-area .header-text h1 {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 15px;
   }
-  .introduction-area .header-text p {
-    margin-bottom: 20px;
+  .introduction-area .header-text p,
+  .introduction-area .header-text .about,
+  .introduction-area .header-text ol,
+  .introduction-area .header-text ul {
+    max-width: 90%;
   }
 }
 
@@ -588,7 +595,12 @@ introduction
     text-align: center;
   }
   .introduction-area .header-text .buttons {
-    display: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .introduction-area .header-text .buttons .button {
+    margin-right: 10px;
   }
   .introduction-area .header-text h1 {
     font-weight: 600;
@@ -596,17 +608,16 @@ introduction
     line-height: 30px !important;
     margin-bottom: 30px !important;
   }
-  .introduction-area .header-text h1 span {
-    color: #ffffffff;
-  }
-  .introduction-area .header-text p {
-    text-align: center;
-    color: #ffffffff;
+  .introduction-area .header-text p,
+  .introduction-area .header-text .about,
+  .introduction-area .header-text ol,
+  .introduction-area .header-text ul {
     font-size: 14px;
     line-height: 22px;
-    margin-bottom: 40px;
+    max-width: 100%;
+    margin-bottom: 20px;
   }
-} 
+}
 
 /* 
 ---------------------------------------------
@@ -814,7 +825,7 @@ discovery
 References
 --------------------------------------------- 
 */
-.section.colored {
+.colored {
   padding-top: 150px;
 }
 
