@@ -427,14 +427,6 @@ a.header-button:hover {
   .header-area .main-nav {
     overflow: hidden;
   }
-  .header-area .main-nav .span {
-    height: 50px !important;
-    line-height: 50px !important;
-    padding: 0px !important;
-    border: none !important;
-    background: #ffffff !important;
-    color: #3B566E !important;
-  }
   .header-area .main-nav .nav {
     float: none;
     width: 100%;
@@ -451,7 +443,7 @@ a.header-button:hover {
   }
   .header-area .main-nav .nav li {
     width: 100%;
-    background: #ffffff;
+    background: #fff;
     border-bottom: 1px solid #eee;
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -461,11 +453,11 @@ a.header-button:hover {
     line-height: 50px !important;
     padding: 0px !important;
     border: none !important;
-    background: #ffffffff !important;
+    background: #fff !important;
     color: #3B566E !important;
   }
   .header-area .main-nav .nav li a:hover {
-    background: #eeeeee !important;
+    background: #eee !important;
   }
 }
 
