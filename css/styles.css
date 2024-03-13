@@ -210,21 +210,18 @@ header
   position: relative;
 }
 
-.header-area .main-nav .logo {
+.header-area .main-nav .nav-gpname {
+  font-size: 30px;
   float: left;
-  margin-top: 37px;
+  margin-top: 18px;
+  margin-left: 50px;
+  margin-right: 30px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  margin-left: 30px;
-}
-
-.header-area .main-nav .logo img {
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  position: relative;
+  z-index: 999;
 }
 
 .header-area .main-nav .nav {
@@ -381,10 +378,6 @@ a.header-button:hover {
   min-height: 80px;
 }
 
-.header-area.header-sticky .logo {
-  margin-top: 25px;
-}
-
 .header-area.header-sticky .nav {
   margin-top: 20px !important;
 }
@@ -407,7 +400,7 @@ a.header-button:hover {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
   .header-area {
     padding: 0px 15px;
     height: 80px;
@@ -417,9 +410,8 @@ a.header-button:hover {
   .header-area .container {
     padding: 0px;
   }
-  .header-area .logo {
-    margin-top: 27px !important;
-    margin-left: 30px;
+  .nav li {
+    display: none;
   }
   .header-area .menu-trigger {
     display: block !important;
