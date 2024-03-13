@@ -207,20 +207,21 @@ header
   border-radius: 40px;
   min-height: 80px;
   background: #ffffff;
+  position: relative;
 }
 
-.header-area .main-nav span {
+.header-area .main-nav .nav-gpname {
   font-size: 30px;
   float: left;
   margin-top: 18px;
-  margin-left: 125px;
+  margin-left: 50px;
   margin-right: 30px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  border: transparent;
-  letter-spacing: 1px;
+  position: relative;
+  z-index: 999;
 }
 
 .header-area .main-nav .nav {
@@ -389,7 +390,7 @@ a.header-button:hover {
   color: #ff589e;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 2500px) {
   .header-area .main-nav .nav li {
     padding-left: 12px;
     padding-right: 12px;
@@ -399,7 +400,7 @@ a.header-button:hover {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
   .header-area {
     padding: 0px 15px;
     height: 80px;
@@ -414,14 +415,6 @@ a.header-button:hover {
   }
   .header-area .main-nav {
     overflow: hidden;
-  }
-  .header-area .main-nav .span {
-    height: 50px !important;
-    line-height: 50px !important;
-    padding: 0px !important;
-    border: none !important;
-    background: #ffffff !important;
-    color: #3B566E !important;
   }
   .header-area .main-nav .nav {
     float: none;
@@ -439,7 +432,7 @@ a.header-button:hover {
   }
   .header-area .main-nav .nav li {
     width: 100%;
-    background: #ffffff;
+    background: #fff;
     border-bottom: 1px solid #eee;
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -449,17 +442,20 @@ a.header-button:hover {
     line-height: 50px !important;
     padding: 0px !important;
     border: none !important;
-    background: #ffffffff !important;
+    background: #fff !important;
     color: #3B566E !important;
   }
   .header-area .main-nav .nav li a:hover {
-    background: #eeeeee !important;
+    background: #eee !important;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1401px) {
   .header-area .main-nav .nav {
     display: flex !important;
+  }
+  .menu-trigger {
+    display: none;
   }
 }
 
@@ -560,10 +556,14 @@ introduction
   .introduction-area .header-text h1 span {
     color: #ffffff;
   }
-  .introduction-area .header-text p {
+  .introduction-area .header-text p,
+  .introduction-area .header-text .about,
+  .introduction-area .header-text ol,
+  .introduction-area .header-text ul {
     text-align: center;
-    color: #ffffff;
-    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
   }
 }
 
@@ -572,13 +572,16 @@ introduction
     top: 65% !important;
     transform: perspective(1px) translateY(-60%) !important;
   }
-   .introduction-area .header-text h1 {
+  .introduction-area .header-text h1 {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 15px;
   }
-  .introduction-area .header-text p {
-    margin-bottom: 20px;
+  .introduction-area .header-text p,
+  .introduction-area .header-text .about,
+  .introduction-area .header-text ol,
+  .introduction-area .header-text ul {
+    max-width: 90%;
   }
 }
 
@@ -592,7 +595,12 @@ introduction
     text-align: center;
   }
   .introduction-area .header-text .buttons {
-    display: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .introduction-area .header-text .buttons .button {
+    margin-right: 10px;
   }
   .introduction-area .header-text h1 {
     font-weight: 600;
@@ -600,17 +608,16 @@ introduction
     line-height: 30px !important;
     margin-bottom: 30px !important;
   }
-  .introduction-area .header-text h1 span {
-    color: #ffffffff;
-  }
-  .introduction-area .header-text p {
-    text-align: center;
-    color: #ffffffff;
+  .introduction-area .header-text p,
+  .introduction-area .header-text .about,
+  .introduction-area .header-text ol,
+  .introduction-area .header-text ul {
     font-size: 14px;
     line-height: 22px;
-    margin-bottom: 40px;
+    max-width: 100%;
+    margin-bottom: 20px;
   }
-} 
+}
 
 /* 
 ---------------------------------------------
@@ -818,7 +825,7 @@ discovery
 References
 --------------------------------------------- 
 */
-.section.colored {
+.colored {
   padding-top: 150px;
 }
 
