@@ -1,24 +1,11 @@
 (function ($) {
-	
-	"use strict";
-
-	// Window Resize Mobile Menu Fix
-	mobileNav();
-
-
-	// Scroll animation init
-	window.sr = new scrollReveal();
-	
 
 	// Menu Dropdown Toggle
-	if($('.menu-trigger').length){
-		$(".menu-trigger").on('click', function() {	
-			$(this).toggleClass('active');
-			$('.header-area .nav').slideToggle(200);
-		});
-	}
-
-
+	$(".menu-trigger").on('click', function() {	
+		$(this).toggleClass('active');
+		$('.header-area .nav').slideToggle(200);
+	});
+  
 	// Menu elevator animation
 	$('a[href*=\\#]:not([href=\\#])').on('click', function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -63,35 +50,20 @@
 	    });
 	});
 
-	function onScroll(event) {
-		var scrollPos = $(document).scrollTop();
-		$('.nav a').each(function() {
-		  var currLink = $(this);
-		  var refElement = $(currLink.attr("href"));
-		  if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-			$('.nav ul li a').removeClass("active");
-			currLink.addClass("active");
-		  } else {
-			currLink.removeClass("active");
-		  }
-		});
+	function onScroll(event){
+	    var scrollPos = $(document).scrollTop();
+	    $('.nav a').each(function () {
+	        var currLink = $(this);
+	        var refElement = $(currLink.attr("href"));
+	        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+	            $('.nav ul li a').removeClass("active");
+	            currLink.addClass("active");
+	        }
+	        else{
+	            currLink.removeClass("active");
+	        }
+	    });
 	}
-
-
-	// Home seperator
-	if($('.home-seperator').length) {
-		$('.home-seperator .left-item, .home-seperator .right-item').imgfix();
-	}
-
-
-	// Home number counterup
-	if($('.count-item').length){
-		$('.count-item strong').counterUp({
-			delay: 10,
-			time: 1000
-		});
-	}
-
 
 	// Page loading animation
 	$(window).on('load', function() {
@@ -110,14 +82,7 @@
 			}, 300);
 		});
 	});
-
-
-	// Window Resize Mobile Menu Fix
-	$(window).on('resize', function() {
-		mobileNav();
-	});
-
-
+  
 	// Window Resize Mobile Menu Fix
 	function mobileNav() {
 		var width = $(window).width();
@@ -129,8 +94,7 @@
 		});
 	}
 
-
-})(window.jQuery);
+  })(window.jQuery);
 
 function showAlert() {
     alert("Hello, Welcome to our website!");
