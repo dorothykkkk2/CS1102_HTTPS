@@ -305,123 +305,28 @@ introduction
 
 /* 
 ---------------------------------------------
-global styles
+Background
 --------------------------------------------- 
 */
-@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
-
-html, body {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  background-color: #ffffff;
-  font-size: 16px;
-  -ms-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.background-area {
+  padding-top: 40px;
 }
 
-.left-heading .section-title {
-  font-weight: 500;
+.bg-heading .bg-title {
   font-size: 24px;
-  line-height: 42px;
   color: #1e1e1e;
-  letter-spacing: 0.25px;
   margin-bottom: 30px;
-  position: relative;
 }
 
-.left-text {
-  font-weight: 400;
+.bg-text {
   font-size: 16px;
   color: #777;
-  line-height: 28px;
-  letter-spacing: 1px;
-}
-
-.left-text p {
   margin-bottom: 30px;
 }
 
 .hr {
-  bottom: 0px;
-  width: 100%;
-  height: 1px;
-  margin-top: 100px;
+  margin-top: 50px;
   border-bottom: 1px solid #eee;
-}
-
-.align-self-center {
-  -ms-flex-item-align: center !important;
-  align-self: center !important;
-}
-
-.padding-top-70 {
-  padding-top: 70px !important;
-}
-
-.padding-bottom-0 {
-  padding-bottom: 0px !important;
-}
-
-
-.padding-bottom-100 {
-  padding-bottom: 100px !important;
-}
-
-.center-heading {
-  text-align: center;
-}
-
-.center-heading .section-title {
-  font-weight: 500;
-  font-size: 28px;
-  color: #1e1e1e;
-  letter-spacing: 1.75px;
-  line-height: 38px;
-  margin-bottom: 20px;
-}
-
-.center-text {
-  text-align: center;
-  font-weight: 400;
-  font-size: 16px;
-  color: #777;
-  line-height: 28px;
-  letter-spacing: 1px;
-  margin-bottom: 50px;
-}
-
-.center-text p {
-  font-size: 15px;
-  color: #777;
-  margin-bottom: 30px;
-}
-
-@media (max-width: 991px) {
-  html, body {
-    overflow-x: hidden;
-  }
-  .mobile-top-fix {
-    margin-top: 30px;
-    margin-bottom: 0px;
-  }
-  .mobile-bottom-fix {
-    margin-bottom: 30px;
-  }
-  .mobile-bottom-fix-big {
-    margin-bottom: 60px;
-  }
-}
-
-/* 
----------------------------------------------
-features
---------------------------------------------- 
-*/
-.section {
-  position: relative;
-  padding-top: 100px;
-  padding-bottom: 80px;
 }
 
 /* 
@@ -429,79 +334,50 @@ features
 application
 --------------------------------------------- 
 */
-.home-feature {
-  padding-bottom: 0px;
+.application-area {
   padding-top: 30px;
   margin-top: 30px; 
-  z-index: 9;
   background: #e5e0f5;
 }
 
-.application-small-item {
-  cursor: pointer;
-  display: block;
+.application-item {
   background: #FFFFFF;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
   border-radius: 20px;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
-  transition: all 0.3s ease 0s;
-  position: relative;
   margin-bottom: 30px;
 }
 
-.application-small-item .icon {
-  transition: all 0.3s ease 0s;
+.application-item .icon {
   width: 90px;
   height: 90px;
   line-height: 90px;
   margin: auto;
-  position: relative;
   margin-bottom: 30px;
   background: #8261ee;
   border-radius: 50%;
 }
 
-.application-small-item .icon i {
-  font-size: 18px;
-  color: #fff;
-}
-
-.application-small-item .application-title {
-  font-weight: 500;
+.application-item .application-title {
   font-size: 18px;
   color: #1e1e1e;
-  letter-spacing: 0.7px;
   margin-bottom: 15px;
-  position: relative;
-  z-index: 2;
 }
 
-.application-small-item p {
-  font-weight: 400;
+.application-item p {
   font-size: 13px;
   color: #777;
-  letter-spacing: 0.5px;
-  line-height: 25px;
-  position: relative;
-  z-index: 2;
-}
-
-@media (max-width: 991px) {
-  .home-feature {
-    padding-bottom: 0px;
-    padding-top: 0px;
-    margin-top: 0px;
-  }
 }
 
 /* 
 ---------------------------------------------
-main features
+features
 --------------------------------------------- 
 */
-.main-features {
-  padding: 50px 0;
+.features-area {
+  padding-top: 30px;
+  margin-top: 30px; 
 }
 
 .feature-item {
@@ -512,21 +388,12 @@ main features
 .feature-title {
   font-size: 27px;
   font-weight: bold;
-  margin-bottom: 10px;
   color: #1e1e1e;
-  letter-spacing: 0.7px;
-  position: relative;
-  z-index: 2;
 }
 
 .feature-description {
   font-size: 18px;
   color: #777;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  line-height: 25px;
-  position: relative;
-  z-index: 2;
 }
 
 /* 
@@ -534,62 +401,53 @@ main features
 discovery
 --------------------------------------------- 
 */
-.discovery {
-  padding-bottom: 0px;
+.discovery-area {
   padding-top: 30px;
   margin-top: 30px; 
-  z-index: 9;
   background: #f4f2f9;
 }
 
-.discovery-post-thumb {
+.discovery-area h2{
+  color: #1e1e1e;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.discovery-area .discovery-text{
+  font-size: 15px;
+  color: #232222dd;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.discovery-post {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.discovery-post-thumb .img {
+.discovery-post .img {
   overflow: hidden;
   border-radius: 20px;
-  position: relative;
   height: 200px;
 }
 
-.discovery-post-thumb .discovery-content {
-  margin-top: -30px;
-  padding-top: 50px;
-}
-
-.discovery-post-thumb h3 {
-  margin-bottom: 20px !important;
-}
-
-.discovery-post-thumb h3 a {
-  font-weight: 500;
+.discovery-post h3 a {
   font-size: 18px;
   color: #1e1e1e;
-  letter-spacing: 0.25px;
-  line-height: 26px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  text-decoration: none !important;
+  text-decoration: none ;
 }
 
-.discovery-post-thumb h3 a:hover {
+.discovery-post h3 a:hover {
   color: #ff589e;
 }
 
-.discovery-post-thumb .text {
-  font-weight: 400;
+.discovery-post p {
   font-size: 13px;
   color: #777;
-  letter-spacing: 0.26px;
-  line-height: 26px;
   margin-bottom: 15px;
 }
 
-.discovery-post-thumb .main-button {
+.discovery-post .button {
   margin-top: 10px;
   display: inline-block;
   font-size: 13px;
@@ -598,20 +456,33 @@ discovery
   background-color: #8261ee;
   text-transform: uppercase;
   color: #fff;
-  letter-spacing: 0.25px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
-.discovery-post-thumb .main-button:hover {
+.discovery-post .button:hover {
   background-color: #ff589e;
 }
 
-.discovery-list .discovery-post-thumb {
-  text-align: left;
+/* 
+---------------------------------------------
+discovery html
+--------------------------------------------- 
+*/
+.discovery-html-area {
+  padding-top: 150px;
+}
+
+.discovery-html-area h2{
+  color: #1e1e1e;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.discovery-html-area .discovery-html-text{
+  font-size: 15px;
+  color: #232222dd;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 /* 
@@ -619,8 +490,21 @@ discovery
 References
 --------------------------------------------- 
 */
-.colored {
+.references-area {
   padding-top: 150px;
+}
+
+.references-area h2{
+  color: #1e1e1e;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.references-area .references-text{
+  font-size: 15px;
+  color: #232222dd;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 /* 
@@ -632,24 +516,9 @@ footer {
   background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
 }
 
-.gpname {
+footer .gpname {
   text-align: center;
-  border-top: 1px solid rgba(250,250,250,0.2);
-  margin-top: 30px;
-  font-weight: 400;
+  margin-top: 10px;
   font-size: 14px;
   color: #fff;
-  letter-spacing: 0.88px;
-}
-
-@media (max-width: 991px) {
-  footer .text {
-    margin-bottom: 30px;
-  }
-  footer h5 {
-    margin-bottom: 15px;
-  }
-  footer .footer-nav {
-    margin-bottom: 30px;
-  }
 }
