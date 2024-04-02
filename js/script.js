@@ -94,8 +94,28 @@
 	}
   })(window.jQuery);
 
-function showAlert() {
-    alert("Hello, Welcome to our website!");
+function zoomIn(element) {
+	element.classList.add('zoom');
+}
+
+function zoomOut(element) {
+	element.classList.remove('zoom');
+}
+
+
+function playVideo(containerId, playerId) {
+    document.getElementById(containerId).style.display = "block";
+    document.getElementById(playerId).play();
+}
+
+function closeVideo(containerId, playerId) {
+	alert("The video is ended.");
+	document.getElementById(containerId).style.display = "none";
+	document.getElementById(playerId).pause();
+}
+
+function showRef(url) {
+	window.open(url);
 }
 
 

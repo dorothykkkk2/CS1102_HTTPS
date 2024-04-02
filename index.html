@@ -104,8 +104,8 @@
                     <p> 
                         Hypertext Transfer Protocol Secure (HTTPS) is a secure version of HTTP used to transfer secure data between web browsers and web servers. 
                         This is especially important when users transmit sensitive information, such as log in to bank account. 
-                        In a web browser, a website URL that does not use HTTPS will display "Not Secure"; conversely, a padlock icon will indicate that the page is secure. 
-                        Some web server/browser may even redirect your http request to https (and not giving you a chance to choose). 
+                        In a web browser, a website URL that does not use HTTPS will display "Not Secure"; conversely, a padlock <img src="images/padlock.png" class="img-fluid" alt="padlock"> will indicate that the page is secure. 
+                        Some web server / browser may even redirect your http request to https (and not giving you a chance to choose). 
                     </p>
                 </div>
             </div>
@@ -151,7 +151,7 @@
                 <div class="row">
                     <!-- ***** Item Start ***** -->
                     <div class="col-lg-4">
-                        <div class="application-item">
+                        <div class="application-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" onclick="playVideo('videoContainer1', 'videoPlayer1')">
                             <div class="icon">
                                 <img src="images/online-transactions.png" class="img-fluid" alt="Secure Online Transactions">
                             </div>
@@ -159,15 +159,23 @@
                             <p>
                                 HTTPS encrypts the communication between the user's browser and the server to prevent attackers from intercepting and tampering with transaction data, ensuring the confidentiality and integrity of transactions. 
                                 <br><br>
-                                E.g online shopping, payment gateways, and financial transactions
+                                E.g Online shopping, Payment gateways, Financial transactions
                             </p>
                         </div>
+
+                        <div id="videoContainer1" class="popup">
+                            <video controls id="videoPlayer1" onended="closeVideo('videoContainer1', 'videoPlayer1')">
+                                <source src="video/login.mp4" type="video/mp4">
+                                Your browser does not support video.
+                            </video>
+                        </div>
+
                     </div>
                     <!-- ***** Item End ***** -->
 
                     <!-- ***** Item Start ***** -->
                     <div class="col-lg-4">
-                        <div class="application-item">
+                        <div class="application-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" onclick="playVideo('videoContainer2', 'videoPlayer2')">
                             <div class="icon">
                               <img src="images/login-and-authentication.png" class="img-fluid" alt="Secure Login and Authentication">
                           </div>
@@ -179,20 +187,36 @@
                             E.g. Login to a Google account or Email account
                         </p>
                       </div>
+
+                        <div id="videoContainer2" class="popup">
+                            <video controls id="videoPlayer2" onended="closeVideo('videoContainer2', 'videoPlayer2')">
+                                <source src="video/login.mp4" type="video/mp4">
+                                Your browser does not support video.
+                            </video>
+                        </div>
+
                   </div>
                   <!-- ***** Item End ***** -->
 
                   <!-- ***** Item Start ***** -->
                   <div class="col-lg-4">
-                      <div class="application-item">
-                          <div class="icon">
-                              <img src="images/privacy.png" class="img-fluid" alt="Privacy Protection">
-                          </div>
-                          <h5 class="application-title">Privacy Protection</h5>
-                          <p>
+                    <div class="application-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" onclick="playVideo('videoContainer3', 'videoPlayer3')">
+                        <div class="icon">
+                            <img src="images/privacy.png" class="img-fluid" alt="Privacy Protection">
+                        </div>
+                        <h5 class="application-title">Privacy Protection</h5>
+                        <p>
                             HTTPS encrypts data to protect users' personal information and browsing behavior from being collected, tracked, or monitored by unauthorized parties. 
                             Even if the user is using an unsecured or public network, attackers cannot easily monitor or snoop on the data exchanged between the user and the website. 
-                      </div>
+                        </p>
+                    </div>
+                
+                    <div id="videoContainer3" class="popup">
+                        <video controls id="videoPlayer3" onended="closeVideo('videoContainer3', 'videoPlayer3')">
+                            <source src="video/login.mp4" type="video/mp4">
+                            Your browser does not support video.
+                        </video>
+                    </div>
                   </div>
                   <!-- ***** Item End ***** -->
                 </div>  
@@ -308,8 +332,6 @@
     </div>
   </section>
 <!-- ***** Discovery End ***** -->
-    
-  <button onclick="showAlert()">Click Me</button>
 
 <!-- ***** Footer Start ***** -->
   <footer>
