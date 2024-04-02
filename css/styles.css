@@ -354,9 +354,7 @@ application
   height: 90px;
   line-height: 90px;
   margin: auto;
-  margin-bottom: 30px;
-  background: #8261ee;
-  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 .application-item .application-title {
