@@ -95,24 +95,43 @@
   })(window.jQuery);
 
 function zoomIn(element) {
-	element.classList.add('zoom');
+    element.classList.add('zoom');
+    var message = element.querySelector('.message');
+    if (!message) {
+        element.insertAdjacentHTML('beforeend', '<p class="message">Click to see more.</p>');
+    }
+    element.messageElement = element.querySelector('.message');
 }
 
 function zoomOut(element) {
-	element.classList.remove('zoom');
+    element.classList.remove('zoom');
+    if (element.messageElement) {
+        element.messageElement.remove();
+        delete element.messageElement;
+	}
 }
 
 
 function playVideo(containerId, playerId) {
-    document.getElementById(containerId).style.display = "block";
+    document.getElementById(containerId).style.display = 'block';
     document.getElementById(playerId).play();
 }
 
 function closeVideo(containerId, playerId) {
 	alert("The video is ended.");
-	document.getElementById(containerId).style.display = "none";
-	document.getElementById(playerId).pause();
+	document.getElementById(containerId).style.display = 'none';
+	document.getElementById(playerId).pause();	
 }
+
+function closeVideoOutside(containerId, playerId) {
+    var videoContainer = document.getElementById(containerId);
+    videoContainer.addEventListener('click', function(event) {
+      if (event.target == this) {
+		document.getElementById(containerId).style.display = 'none';
+		document.getElementById(playerId).pause();	
+      }
+    });
+  }
 
 function showRef(url) {
 	window.open(url);

@@ -365,7 +365,7 @@ application
   margin-bottom: 15px;
 }
 
-.application-item p {
+.application-item .application-text {
   font-size: 15px;
   color: #777;
   text-align:justify;
@@ -373,6 +373,11 @@ application
 
 .zoom {
   transform: scale(1.2);
+}
+
+.message {
+  font-size: 13px;
+  color: rgba(255, 0, 0, 0.995);
 }
 
 .popup {
