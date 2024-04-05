@@ -456,14 +456,16 @@ discovery
   margin-bottom: 30px;
 }
 
-.discovery-post .img {
-  overflow: hidden;
+.discovery-post .icon img {
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
-  height: 200px;
+  overflow: hidden;
 }
 
 .discovery-post h3 a {
-  font-size: 18px;
+  font-size: 20px;
   color: #1e1e1e;
   text-decoration: none ;
 }
@@ -473,21 +475,18 @@ discovery
 }
 
 .discovery-post p {
-  font-size: 13px;
+  font-size: 15px;
   color: #777;
   margin-bottom: 15px;
   text-align:justify;
 }
 
 .discovery-post .button {
-  margin-top: 10px;
-  display: inline-block;
-  font-size: 13px;
+  font-size: 16px;
   border-radius: 20px;
   padding: 12px 20px;
   background-color: #8261ee;
-  text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -536,7 +535,7 @@ References
   font-size: 15px;
   color: #232222dd;
   margin-bottom: 15px;
-  text-align: center;
+  text-align: justify;
   list-style-position: inside;
 }
 
