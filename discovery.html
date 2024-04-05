@@ -35,7 +35,7 @@
                   <span class="nav-gpname"> <strong>Intelligence Girls</strong></span>
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="#discovery-1" class="active">Discovery 1</a></li>
+                        <li><a href="#discovery-1" class="active">Speed difference between using HTTP and HTTPS</a></li>
                         <li><a href="#discovery-2">Discovery 2</a></li>
                         <li><a href="#discovery-3">Discovery 3</a></li>
                         <li><a href="index.html">Back</a></li>
@@ -80,10 +80,18 @@
           </div>
           <div class="col-lg-7">
               <div class="bg-heading">
-                  <h2 class="bg-title">Discovery 1</h2>
+                  <h2 class="bg-title">Speed difference between using HTTP and HTTPS</h2>
               </div>
               <div class="bg-text">
-                  <p>Nullam sit amet purus libero. Etiam ullamcorper nisl ut augue blandit, at finibus leo efficitur. Nam gravida purus non sapien auctor, ut aliquam magna ullamcorper.</p>
+                    <p>
+                        In general, HTTP is slightly faster than HTTPS. The difference between the speed difference is due to the TLS handshake, which is also called the SSL handshake.
+                        <br><br>
+                        A TLS handshake involves multiple procedures. It includes the exchange of messages between the client and server, authentication of the server's SSL certificate by the client, encryption, decryption, and the generation of a session key. The number of roundtrips increases through this process, resulting in more load time for a page to show up and computation power. Until this process comes to an end, transmission of data starts.
+                        <br><br>
+                        In contrast, HTTP is simple. The connection is made directly using TCP, which does not involve encryption. Both client and server communicate in plaintext, with the client submitting HTTP requests and the server returning HTTP responses. No TLS handshake is required, which creates a relatively faster speed of HTTP over HTTPS.
+                        <br><br>
+                        However, the speed difference can be mitigated through enhanced TLS protocols and optimizations. Through a technology called TLS False Start, the TLS handshake could start to transmit data earlier before the handshake is completed. In addition, an updated version of TLS 1.3 has lowered the requirement of roundtrip by one.
+                    </p>
               </div>
           </div>
       </div>
