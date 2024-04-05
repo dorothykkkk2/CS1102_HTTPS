@@ -93,15 +93,20 @@
   <section class="background-area" id="background">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5">
-                <img src="images/left-image.png" class="rounded mx-auto d-block" alt="App">
-            </div>
             <div class="col-lg-7">
+                <img src="images/what-is-HTTPS.png" class="img-fluid" alt="What is HTTPS">
+            </div>
+            <div class="col-lg-5">
                 <div class="bg-heading">
-                    <h2 class="bg-title">Background 1</h2>
+                    <h2 class="bg-title">What is HTTPS?</h2>
                 </div>
                 <div class="bg-text">
-                    <p>Nullam sit amet purus libero. Etiam ullamcorper nisl ut augue blandit, at finibus leo efficitur. Nam gravida purus non sapien auctor, ut aliquam magna ullamcorper.</p>
+                    <p> 
+                        Hypertext Transfer Protocol Secure (HTTPS) is a secure version of HTTP used to transfer secure data between web browsers and web servers. 
+                        This is especially important when users transmit sensitive information, such as log in to bank account. 
+                        In a web browser, a website URL that does not use HTTPS will display "Not Secure"; conversely, a padlock <img src="images/padlock.png" class="img-fluid" alt="padlock"> will indicate that the page is secure. 
+                        Some web server / browser may even redirect your http request to https (and not giving you a chance to choose). 
+                    </p>
                 </div>
             </div>
         </div>
@@ -116,16 +121,22 @@
   <section class="background-area">
       <div class="container">
           <div class="row">
-              <div class="col-lg-7">
+              <div class="col-lg-5">
                   <div class="bg-heading">
-                      <h2 class="bg-title">Background 2</h2>
+                      <h2 class="bg-title">How it works?</h2>
                   </div>
                   <div class="bg-text">
-                      <p>Aenean pretium, ipsum et porttitor auctor, metus ipsum iaculis nisi, a bibendum lectus libero vitae urna. Sed id leo eu dolor luctus congue sed eget ipsum. Nunc nec luctus libero. Etiam quis dolor elit.</p>
+                      <p>
+                        HTTPS uses SSL (Secure Socket Layer) or TLS (Transport Layer Security) protocol. 
+                        It uses encryption to protect communications by using asymmetric key encryption. 
+                        This method uses a pair of different keys (Public key is publicly distributed; Private key is kept secret). 
+                        Either key can be used for encryption and the other key for decryption. 
+                        They can decode each other but cannot derive the other's key.
+                      </p>
                   </div>
               </div>
-              <div class="col-lg-5">
-                  <img src="images/right-image.png" class="rounded mx-auto d-block" alt="App">
+              <div class="col-lg-7">
+                  <img src="images/how-it-works.png" class="img-fluid" alt="How it works">
               </div>
           </div>
       </div>
@@ -140,37 +151,72 @@
                 <div class="row">
                     <!-- ***** Item Start ***** -->
                     <div class="col-lg-4">
-                        <div class="application-item">
+                        <div class="application-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" onclick="playVideo('videoContainer1', 'videoPlayer1')">
                             <div class="icon">
-                                <img src="images/featured-item-01.png" alt="">
+                                <img src="images/online-transactions.png" class="img-fluid" alt="Secure Online Transactions">
                             </div>
-                            <h5 class="application-title">Modern Strategy</h5>
-                            <p>Customize anything in this template to fit your website needs</p>
+                            <h5 class="application-title">Secure Online Transactions</h5>
+                            <p class="application-text">
+                                HTTPS encrypts the communication between the user's browser and the server to prevent attackers from intercepting and tampering with transaction data, ensuring the confidentiality and integrity of transactions. 
+                                <br><br>
+                                E.g Online shopping, Payment gateways, Financial transactions
+                            </p>
                         </div>
+
+                        <div id="videoContainer1" class="popup" onclick="closeVideoOutside('videoContainer1', 'videoPlayer1')">
+                            <video controls id="videoPlayer1" onended="closeVideo('videoContainer1', 'videoPlayer1')">
+                                <source src="video/transactions.mp4" type="video/mp4">
+                                Your browser does not support video.
+                            </video>
+                        </div>
+
                     </div>
                     <!-- ***** Item End ***** -->
 
                     <!-- ***** Item Start ***** -->
                     <div class="col-lg-4">
-                        <div class="application-item">
+                        <div class="application-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" onclick="playVideo('videoContainer2', 'videoPlayer2')">
                             <div class="icon">
-                              <img src="images/featured-item-01.png" alt="">
+                              <img src="images/login-and-authentication.png" class="img-fluid" alt="Secure Login and Authentication">
                           </div>
-                          <h5 class="application-title">Best Relationship</h5>
-                          <p>Contact us immediately if you have a question in mind</p>
+                          <h5 class="application-title">Secure Login & Authentication</h5>
+                          <p class="application-text">
+                            When a user enters login information (such as a username and password), HTTPS ensures that the information is encrypted and protected during transmission. 
+                            Prevent attackers from capturing information and gaining unauthorized access to user accounts.
+                            <br><br>
+                            E.g. Login to a Google account or Bank account
+                        </p>
                       </div>
+
+                        <div id="videoContainer2" class="popup" onclick="closeVideoOutside('videoContainer2', 'videoPlayer2')">
+                            <video controls id="videoPlayer2" onended="closeVideo('videoContainer2', 'videoPlayer2')">
+                                <source src="video/login.mp4" type="video/mp4">
+                                Your browser does not support video.
+                            </video>
+                        </div>
+
                   </div>
                   <!-- ***** Item End ***** -->
 
                   <!-- ***** Item Start ***** -->
                   <div class="col-lg-4">
-                      <div class="application-item">
-                          <div class="icon">
-                              <img src="images/featured-item-01.png" alt="">
-                          </div>
-                          <h5 class="application-title">Ultimate Marketing</h5>
-                          <p>You just need to tell your friends about our free templates</p>
-                      </div>
+                    <div class="application-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" onclick="playVideo('videoContainer3', 'videoPlayer3')">
+                        <div class="icon">
+                            <img src="images/privacy.png" class="img-fluid" alt="Privacy Protection">
+                        </div>
+                        <h5 class="application-title">Privacy Protection</h5>
+                        <p class="application-text">
+                            HTTPS encrypts data to protect users' personal information and browsing behavior from being collected, tracked, or monitored by unauthorized parties. 
+                            Even if the user is using an unsecured or public network, attackers cannot easily monitor or snoop on the data exchanged between the user and the website. 
+                        </p>
+                    </div>
+                
+                    <div id="videoContainer3" class="popup" onclick="closeVideoOutside('videoContainer3', 'videoPlayer3')">
+                        <video controls id="videoPlayer3" onended="closeVideo('videoContainer3', 'videoPlayer3')">
+                            <source src="video/privacy.mp4" type="video/mp4">
+                            Your browser does not support video.
+                        </video>
+                    </div>
                   </div>
                   <!-- ***** Item End ***** -->
                 </div>  
@@ -210,16 +256,12 @@
   <section class="discovery-area" id="discovery">
     <div class="container">
         <!-- ***** Title Start ***** -->
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="discovery-heading">
-                    <h2>Discovery</h2>
-                </div>
+        <div>
+            <div class="discovery-heading">
+                <h2>Discovery</h2>
             </div>
-            <div>
-                <div class="discovery-text">
-                    <p>To compare HTTPS with HTTP and demonstrate its benefits in security.</p>
-                </div>
+            <div class="discovery-text">
+                <p>To compare HTTPS with HTTP and demonstrate its benefits in security.</p>
             </div>
         </div>
         <!-- ***** Title End ***** -->
@@ -286,8 +328,6 @@
     </div>
   </section>
 <!-- ***** Discovery End ***** -->
-    
-  <button onclick="showAlert()">Click Me</button>
 
 <!-- ***** Footer Start ***** -->
   <footer>
