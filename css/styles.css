@@ -535,6 +535,11 @@ discovery html
   margin-bottom: 15px;
 }
 
+.discovery-text-text ul {
+  list-style-type: disc;
+  color: black;
+}
+
 .discovery-text-text .show-ref{
   font-style: italic;
 }
@@ -542,6 +547,11 @@ discovery html
 .discovery-text-text .show-image{
   color: #777;
   text-decoration: none;
+}
+
+.discovery-text-text .show-image:hover {
+  color: #1e1e1e;
+  font-size: 18px;
 }
 
 .discovery-text-img{
