@@ -118,15 +118,15 @@
 
                         <ol>
                         <li>
-                            Install software to track packet sniffer Wireshark(https://www.wireshark.org/) is used in this experiment.
+                            Install software to track packet sniffer Wireshark (<a href="#" class="show-ref" onclick="showRef('https://www.wireshark.org/')">https://www.wireshark.org/</a>) is used in this experiment.
                         </li>
 
                         <li>
-                            Find a website that can be used by both HTTP and HTTPS Wikidot (http://www.wikidot.com/) is chosen.
+                            Find a website that can be used by both HTTP and HTTPS Wikidot (<a href="#" class="show-ref" onclick="showRef('http://www.wikidot.com/')">http://www.wikidot.com/</a>) is chosen.
                         </li>
 
                         <li>
-                            Use https://temp-mail.org/en/email-generator to generate a temporary email address and create an account for testing in wikidot.
+                            Use <a href="#" class="show-ref" onclick="showRef('https://temp-mail.org/en/email-generator')">https://temp-mail.org/en/email-generator</a> to generate a temporary email address and create an account for testing in wikidot.
                         </li>
 
                         <li>
@@ -141,14 +141,16 @@
                             Sign in to Wikidot using HTTP.
                         </li>
 
+                        <a href="#" class="show-image" onmouseover="currentSlide(1)">
                         <li>
-                            View the tracked data packet.
+                            View the tracked data packet. (Image 1)
                             <br>
                             It is found that the login information and cookie are tracked. 
                             The login information is not transferred safely, it hurt our privacy. 
                             Hacker can use the collected username and password to login to my account. 
-                            They may also use them for illegal usage. 
+                            They may also use them for illegal usage.
                         </li>
+                        </a>
 
                         <li>
                             Sign in to Wikidot using HTTPS.
@@ -157,11 +159,15 @@
                         <li>
                             View the tracked data packet.
                             <br>
+                            <a href="#" class="show-image" onmouseover="currentSlide(2)">
                             Transport Layer Security (TLS) protocol is used.
-                            A handshake is done between client side and server side.
+                            A handshake is done between client side and server side. (Image 2)
+                            </a>
                             <br>
+                            <a href="#" class="show-image" onmouseover="currentSlide(3)">
                             All the data transferred are encrypted using hashing algorithm. 
-                            Even if the data packets are sniffed, they cannot be understandable because they are some nonsensical characters.
+                            Even if the data packets are sniffed, they cannot be understandable because they are some nonsensical characters. (Image 3)
+                            </a>
                         </li>
 
                         </ol>

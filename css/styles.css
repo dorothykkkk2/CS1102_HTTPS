@@ -535,6 +535,15 @@ discovery html
   margin-bottom: 15px;
 }
 
+.discovery-text-text .show-ref{
+  font-style: italic;
+}
+
+.discovery-text-text .show-image{
+  color: #777;
+  text-decoration: none;
+}
+
 .discovery-text-img{
   margin-bottom: 20px;
 }
@@ -588,6 +597,7 @@ discovery html
 .slideshow-dots span.active {
   background-color: #555;
 }
+
 /* 
 ---------------------------------------------
 References
@@ -604,11 +614,15 @@ References
 }
 
 .references-area .references-text{
-  font-size: 15px;
+  font-size: 17px;
   color: #232222dd;
   margin-bottom: 15px;
   text-align: justify;
   list-style-position: inside;
+}
+
+.references-text li {
+  margin-bottom: 15px;
 }
 
 .references-area .references-text a{
