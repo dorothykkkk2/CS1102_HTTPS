@@ -1,3 +1,9 @@
+/* 
+---------------------------------------------
+index
+--------------------------------------------- 
+*/
+
 (function ($) {
 	
 	// Menu Dropdown Toggle
@@ -111,7 +117,6 @@ function zoomOut(element) {
 	}
 }
 
-
 function playVideo(containerId, playerId) {
     document.getElementById(containerId).style.display = 'block';
     document.getElementById(playerId).play();
@@ -132,6 +137,86 @@ function closeVideoOutside(containerId, playerId) {
       }
     });
   }
+
+/* 
+---------------------------------------------
+discovery
+--------------------------------------------- 
+*/
+$(document).ready(function() {
+    var slides = $('.slideshow img');
+    var dotsContainer = $('.slideshow-dots');
+    var dots = '';
+
+    // Create dots for each slide
+    for (var i = 0; i < slides.length; i++) {
+      dots += '<span></span>';
+    }
+    dotsContainer.html(dots);
+
+    var currentIndex = 0;
+    var interval;
+
+    // Show current slide and activate corresponding dot
+    function showSlide(index) {
+      slides.removeClass('active');
+      dotsContainer.find('span').removeClass('active');
+      slides.eq(index).addClass('active');
+      dotsContainer.find('span').eq(index).addClass('active');
+    }
+
+    // Start slideshow automatically
+    function startSlideshow() {
+      interval = setInterval(function() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      }, 2000); // Adjust the delay between slides (in milliseconds) as needed
+    }
+
+    // Stop slideshow
+    function stopSlideshow() {
+      clearInterval(interval);
+    }
+
+    // Show next slide
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    // Show previous slide
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    // Start slideshow on page load
+    startSlideshow();
+
+    // Handle dot click event
+    dotsContainer.on('click', 'span', function() {
+      currentIndex = $(this).index();
+      showSlide(currentIndex);
+      stopSlideshow();
+    });
+
+    // Handle next button click event
+    $('.slideshow-next').on('click', function() {
+      nextSlide();
+      stopSlideshow();
+    });
+
+    // Handle previous button click event (optional)
+    // $('.slideshow-prev').on('click', function() {
+    //   prevSlide();
+    //   stopSlideshow();
+    // });
+  });
+/* 
+---------------------------------------------
+ref
+--------------------------------------------- 
+*/
 
 function showRef(url) {
 	window.open(url);

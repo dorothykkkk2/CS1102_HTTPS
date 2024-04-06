@@ -537,6 +537,61 @@ discovery html
   margin-bottom: 15px;
 }
 
+.discovery-text-img{
+  margin-bottom: 20px;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+
+.slideshow img {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.slideshow img.active {
+  display: block;
+}
+
+.slideshow-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slideshow-dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slideshow-dots span.active {
+  background-color: #555;
+}
+
+.slideshow-next {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.slideshow-back {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
 /* 
 ---------------------------------------------
 References
