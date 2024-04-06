@@ -143,75 +143,35 @@ function closeVideoOutside(containerId, playerId) {
 discovery
 --------------------------------------------- 
 */
-$(document).ready(function() {
-    var slides = $('.slideshow img');
-    var dotsContainer = $('.slideshow-dots');
-    var dots = '';
+let slideIndex = 1;
+showSlides(slideIndex);
 
-    // Create dots for each slide
-    for (var i = 0; i < slides.length; i++) {
-      dots += '<span></span>';
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("slideshow-dots")[0].getElementsByTagName("span");
+    if (n > 3) {
+      slideIndex = 1;
     }
-    dotsContainer.html(dots);
-
-    var currentIndex = 0;
-    var interval;
-
-    // Show current slide and activate corresponding dot
-    function showSlide(index) {
-      slides.removeClass('active');
-      dotsContainer.find('span').removeClass('active');
-      slides.eq(index).addClass('active');
-      dotsContainer.find('span').eq(index).addClass('active');
+    if (n < 1) {
+      slideIndex = 3;
     }
-
-    // Start slideshow automatically
-    function startSlideshow() {
-      interval = setInterval(function() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-      }, 2000); // Adjust the delay between slides (in milliseconds) as needed
+    for (i = 0; i < 3; i++) {
+      slides[i].style.display = "none";
+      dots[i].className = dots[i].className.replace("active");
     }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
 
-    // Stop slideshow
-    function stopSlideshow() {
-      clearInterval(interval);
-    }
-
-    // Show next slide
-    function nextSlide() {
-      currentIndex = (currentIndex + 1) % slides.length;
-      showSlide(currentIndex);
-    }
-
-    // Show previous slide
-    function prevSlide() {
-      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-      showSlide(currentIndex);
-    }
-
-    // Start slideshow on page load
-    startSlideshow();
-
-    // Handle dot click event
-    dotsContainer.on('click', 'span', function() {
-      currentIndex = $(this).index();
-      showSlide(currentIndex);
-      stopSlideshow();
-    });
-
-    // Handle next button click event
-    $('.slideshow-next').on('click', function() {
-      nextSlide();
-      stopSlideshow();
-    });
-
-    // Handle previous button click event (optional)
-    // $('.slideshow-prev').on('click', function() {
-    //   prevSlide();
-    //   stopSlideshow();
-    // });
-  });
 /* 
 ---------------------------------------------
 ref

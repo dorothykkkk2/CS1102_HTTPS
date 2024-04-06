@@ -4,7 +4,6 @@ preloader
 --------------------------------------------- 
 */
 #preloader {
-  overflow: hidden;
   background-image: linear-gradient(135deg, #a759d1 0%, #8261ee 100%);
   left: 0;
   right: 0;
@@ -461,7 +460,6 @@ discovery
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  overflow: hidden;
 }
 
 .discovery-post h3 a {
@@ -545,20 +543,35 @@ discovery html
   position: relative;
   width: 100%;
   height: 100%; 
-  overflow: hidden;
 }
 
-.slideshow img {
+.slideshow .mySlides {
   width: 100%;
   height: auto;
   display: none;
 }
 
-.slideshow img.active {
+.slideshow .mySlides .active {
   display: block;
 }
 
-.slideshow-dots {
+.slideshow .slideshow-back {
+  font-size: 37px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.slideshow .slideshow-next {
+  font-size: 37px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.slideshow .slideshow-dots {
   text-align: center;
   margin-top: 10px;
 }
@@ -570,27 +583,10 @@ discovery html
   border-radius: 50%;
   background-color: #bbb;
   margin: 0 5px;
-  cursor: pointer;
 }
 
 .slideshow-dots span.active {
   background-color: #555;
-}
-
-.slideshow-next {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-
-.slideshow-back {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  cursor: pointer;
 }
 /* 
 ---------------------------------------------
