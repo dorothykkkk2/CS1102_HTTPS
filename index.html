@@ -231,7 +231,7 @@
     <div class="container">
       <div class="row">
         <!-- ***** Item Start ***** -->
-        <div class="col-lg-6">
+        <div class="col-lg-12">
           <div class="feature-item">
             <h4 class="feature-title">Authentication</h4>
             <p class="feature-description">
@@ -244,15 +244,41 @@
           </div>
         </div>
         <!-- ***** Item End ***** -->
+      </div>
 
+      <div class="row">
         <!-- ***** Item Start ***** -->
         <div class="col-lg-6">
           <div class="feature-item">
-            <h4 class="feature-title">Feature 2</h4>
-            <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum tincidunt est, vitae hendrerit nisl feugiat ac.</p>
+            <h4 class="feature-title">Secure Transfer of Data</h4>
+            <p class="feature-description">
+                HTTPS secures all incoming and outgoing traffic using Secure Socket Layer (SSL) or Transport Layer Security (TLS) protocols. 
+                These protocols utilize both symmetric and asymmetric encryption methods.     
+                Asymmetric encryption is used during the initial "handshake" between the browser and server to establish secure communication.     
+                Following this, symmetric encryption is used for data transmission to ensure efficient processing of large files.     
+                Both encryption methods safeguard transmitted data from theft or tampering, as even if intercepted by a third party, the lack of a public or private key prevents reading or modification, significantly enhancing the security of data transmission.
+            </p>
           </div>
         </div>
         <!-- ***** Item End ***** -->
+
+        <!-- ***** Item Start ***** -->
+        <div class="col-lg-6">
+            <div class="feature-item">
+              <h4 class="feature-title">Data Integrity</h4>
+              <p class="feature-description">
+                HTTPS uses cryptographic techniques like hash functions to guarantee data integrity. 
+                Data is split up into small packets when transmitted. 
+                Each packet is assigned a message digest using the hash function. 
+                A hash function is a mathematical algorithm that generates a fixed-length character string from data. 
+                A slight alteration in the data will result in a completely different hash value. 
+                The message digest uniquely represents the data and is included in the HTTPS transmission with the actual data. 
+                The recipient can use the hash values to confirm the data's integrity after receiving it. 
+                By comparing the message digests, HTTPS offers a reliable method for identifying any unauthorized modifications or adjustments to the sent data.
+              </p>
+            </div>
+          </div>
+          <!-- ***** Item End ***** -->
       </div>
     </div>
   </section>
@@ -277,7 +303,7 @@
             <div class="col-lg-4">
                 <div class="discovery-post">
                     <div class="icon">
-                        <img src="images/discovery-item-01.png" alt="Speed difference between using HTTP and HTTPS">
+                        <img src="images/discovery-item-01-1.png" alt="Speed difference between using HTTP and HTTPS">
                     </div>
                     <div class="discovery-content">
                         <h3>
@@ -293,17 +319,17 @@
             <!-- ***** Item End ***** -->
 
             <!-- ***** Item Start ***** -->
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-lg-4">
               <div class="discovery-post">
                   <div class="icon">
-                      <img src="images/discovery-item-02.png" alt="">
+                      <img src="images/discovery-item-02.png" alt="Data packet">
                   </div>
                   <div class="discovery-content">
                     <h3>
-                      <a href="discovery.html#discovery-2">Phasellus convallis augue</a>
+                      <a href="discovery.html#discovery-2">Data packet</a>
                     </h3>
                     <p>
-                        Aliquam commodo ornare nisl, et scelerisque nisl dignissim ac. Vestibulum finibus urna ut velit venenatis, vel ultrices sapien mattis.
+                        An experiment is done to track differences on data packets between transfering data through http and https.
                     </p>
                     <a href="discovery.html#discovery-2" class="button">Read More</a>
                   </div>
@@ -312,17 +338,17 @@
             <!-- ***** Item End ***** -->
 
             <!-- ***** Item Start ***** -->
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-lg-4">
                 <div class="discovery-post">
                     <div class="icon">
-                        <img src="images/discovery-item-03.png" alt="">
+                        <img src="images/discovery-item-03.jpeg" alt="Content variation (sometimes) between HTTP and HTTPS">
                     </div>
                     <div class="discovery-content">
                         <h3>
-                            <a href="discovery.html#discovery-3">Nam gravida purus non</a>
+                            <a href="discovery.html#discovery-3">Content variation (sometimes) between HTTP and HTTPS</a>
                         </h3>
                         <p>
-                            Maecenas eu erat vitae dui convallis consequat vel gravida nulla. Vestibulum finibus euismod odio, ut tempus enim varius eu.
+                            Certain elements, such as images and cascading style sheets, may not be displayed when utilising HTTPS pages, yet they appear correctly on HTTP pages.
                         </p>
                         <a href="discovery.html#discovery-3" class="button">Read More</a>
                     </div>

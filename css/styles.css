@@ -516,6 +516,27 @@ discovery html
   text-align: center;
 }
 
+.discovery-text-area{
+  padding-top: 40px;
+}
+
+.discovery-text-heading .discovery-text-title {
+  font-size: 30px;
+  color: #1e1e1e;
+  margin-bottom: 30px;
+}
+
+.discovery-text-text {
+  font-size: 17px;
+  color: #777;
+  margin-bottom: 30px;
+  text-align:justify;
+}
+
+.discovery-text-text li {
+  margin-bottom: 15px;
+}
+
 /* 
 ---------------------------------------------
 References

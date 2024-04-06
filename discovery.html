@@ -35,9 +35,9 @@
                   <span class="nav-gpname"> <strong>Intelligence Girls</strong></span>
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="#discovery-1" class="active">Speed difference between using HTTP and HTTPS</a></li>
-                        <li><a href="#discovery-2">Discovery 2</a></li>
-                        <li><a href="#discovery-3">Discovery 3</a></li>
+                        <li><a href="#discovery-1" class="active">Speed difference</a></li>
+                        <li><a href="#discovery-2">Data packet</a></li>
+                        <li><a href="#discovery-3">Content variation</a></li>
                         <li><a href="index.html">Back</a></li>
                     </ul>
                     <a class='menu-trigger'>
@@ -72,17 +72,17 @@
 </section>
 
  <!-- ***** Item Start ***** -->
-<section class="background-area" id="discovery-1">
+<section class="discovery-text-area" id="discovery-1">
   <div class="container">
       <div class="row">
           <div class="col-lg-5 d-flex justify-content-center align-items-center">
               <img src="images/discovery-item-01.png" class="img-fluid" alt="Speed difference between using HTTP and HTTPS">
           </div>
           <div class="col-lg-7">
-              <div class="bg-heading">
-                  <h2 class="bg-title">Speed difference between using HTTP and HTTPS</h2>
+              <div class="discovery-text-heading">
+                  <h2 class="discovery-text-title">Speed difference between using HTTP and HTTPS</h2>
               </div>
-              <div class="bg-text">
+              <div class="discovery-text-text">
                     <p>
                         In general, HTTP is slightly faster than HTTPS. The difference between the speed difference is due to the TLS handshake involve in HTTPS, which is also called the SSL handshake.
                         <br><br>
@@ -105,19 +105,71 @@
 <!-- ***** Item End ***** -->
 
 <!-- ***** Item Start ***** -->
-<section class="background-area" id="discovery-2">
+<section class="discovery-text-area" id="discovery-2">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7">
-                <div class="bg-heading">
-                    <h2 class="bg-title">Discovery 2</h2>
+            <div class="col-lg-6">
+                <div class="discovery-text-heading">
+                    <h2 class="discovery-text-title">Data packet</h2>
                 </div>
-                <div class="bg-text">
-                    <p>Aenean pretium, ipsum et porttitor auctor, metus ipsum iaculis nisi, a bibendum lectus libero vitae urna. Sed id leo eu dolor luctus congue sed eget ipsum. Nunc nec luctus libero. Etiam quis dolor elit.</p>
+                <div class="discovery-text-text">
+                    <p>
+                        An experiment is done to track differences on data packets between transfering data through http and https.
+
+                        <ol>
+                        <li>
+                            Install software to track packet sniffer Wireshark(https://www.wireshark.org/) is used in this experiment.
+                        </li>
+
+                        <li>
+                            Find a website that can be used by both HTTP and HTTPS Wikidot (http://www.wikidot.com/) is chosen.
+                        </li>
+
+                        <li>
+                            Use https://temp-mail.org/en/email-generator to generate a temporary email address and create an account for testing in wikidot.
+                        </li>
+
+                        <li>
+                            Use command prompt to find out the ip address of www.wikidot.com. The ip address is used to filter the necessary packets in Wireshark.
+                        </li>
+
+                        <li>
+                            Open Wireshark to start the tracking.
+                        </li>
+
+                        <li>
+                            Sign in to Wikidot using HTTP.
+                        </li>
+
+                        <li>
+                            View the tracked data packet.
+                            <br>
+                            It is found that the login information and cookie are tracked. 
+                            The login information is not transferred safely, it hurt our privacy. 
+                            Hacker can use the collected username and password to login to my account. 
+                            They may also use them for illegal usage. 
+                        </li>
+
+                        <li>
+                            Sign in to Wikidot using HTTPS.
+                        </li>
+
+                        <li>
+                            View the tracked data packet.
+                            <br>
+                            Transport Layer Security (TLS) protocol is used.
+                            A handshake is done between client side and server side.
+                            <br>
+                            All the data transferred are encrypted using hashing algorithm. 
+                            Even if the data packets are sniffed, they cannot be understandable because they are some nonsensical characters.
+                        </li>
+
+                        </ol>
+                    </p>
                 </div>
             </div>
-            <div class="col-lg-5">
-                <img src="images/right-image.png" class="rounded mx-auto d-block" alt="App">
+            <div class="col-lg-6">
+                <img src="images/right-image.png" class="rounded mx-auto d-block" alt="Data packet">
             </div>
         </div>
         <div class="row">
@@ -130,19 +182,42 @@
 <!-- ***** Item End ***** -->
 
 <!-- ***** Item Start ***** -->
-<section class="background-area" id="discovery-3">
+<section class="discovery-text-area" id="discovery-3">
   <div class="container">
       <div class="row">
-          <div class="col-lg-5">
-              <img src="images/left-image.png" class="rounded mx-auto d-block" alt="App">
+          <div class="col-lg-5 d-flex justify-content-center align-items-center">
+              <img src="images/discovery-item-03.jpeg" class="img-fluid" alt="Content variation (sometimes) between HTTP and HTTPS">
           </div>
           <div class="col-lg-7">
-              <div class="bg-heading">
-                  <h2 class="bg-title">Discovery 3</h2>
+              <div class="discovery-text-heading">
+                  <h2 class="discovery-text-title">Content variation (sometimes) between HTTP and HTTPS</h2>
               </div>
-              <div class="bg-text">
-                  <p>Nullam sit amet purus libero. Etiam ullamcorper nisl ut augue blandit, at finibus leo efficitur. Nam gravida purus non sapien auctor, ut aliquam magna ullamcorper.</p>
-              </div>
+              <div class="discovery-text-text">
+                    <p>
+                        Certain elements, such as images and cascading style sheets, may not be displayed when utilising HTTPS pages, yet they appear correctly on HTTP pages. 
+                        This situation can be attributed to two reasons.
+                        
+                        <ol>
+                        <li>
+                            Mixed content: When a Web page contains encrypted HTTPS elements and unencrypted HTTP elements, only encrypted HTTPS content is transmitted to protect user security. 
+                            Because unencrypted HTTP content is vulnerable to third-party attacks, web browsers often block HTTP requests within web pages for the user's experience. 
+                            Therefore, unencrypted HTTP content cannot be displayed on HTTPS pages. 
+                            Mixed content usually occurs during a website's transition from HTTP to HTTPS. 
+                            When some content continues using HTTP, it becomes incompatible with the secure HTTPS environment, resulting in its inability to be displayed on the web page.
+                        </li>
+                        
+                        <li>
+                            Domain Name and SSL Certificate Mismatch: While applying for an SSL certificate, the Certification Authority records the webpage's domain name. 
+                            The browser establishes a secure encrypted connection only when the domain name matches the one in the certificate. 
+                            However, if the domain names do not match, the browser treats the data transfer as insecure. 
+                            It prevents the user from accessing the webpage. In contrast, HTTP webpages do not require an SSL Certificate. 
+                            There is no problem of a mismatch between the domain name and SSL Certificate so that the user can access the web page.
+                        </li>
+
+                        </ol>
+
+                    </p>
+                </div>
           </div>
       </div>
       <div class="row">
