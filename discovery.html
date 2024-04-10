@@ -110,11 +110,11 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="discovery-text-heading">
-                    <h2 class="discovery-text-title">Data packet</h2>
+                    <h2 class="discovery-text-title">Differences on Data packets between HTTP and HTTPS</h2>
                 </div>
                 <div class="discovery-text-text">
                     <p>
-                        An experiment is done to track differences on data packets between transfering data through http and https.
+                        An experiment is done to track differences on data packets between transfering data through http and https. The steps and process for the experiment is as follow.
 
                         <ol>
                         <li>
@@ -145,10 +145,9 @@
                         <li>
                             View the tracked data packet. (Image 1)
                             <br>
-                            It is found that the login information and cookie are tracked. 
-                            The login information is not transferred safely, it hurt our privacy. 
-                            Hacker can use the collected username and password to login to my account. 
-                            They may also use them for illegal usage.
+                            The data packet shows that the login information is transmitted in plain text, and cookies can also be viewed.
+                            It is possible for hackers to intercept data transactions and use the collected username and password to log in to accounts for illegal purposes.  
+                            The insecure transmission hurts user browsing security and privacy. 
                         </li>
                         </a>
 
@@ -163,14 +162,14 @@
                             <ul>
                                 <li>
                                     <a href="#" class="show-image" onmouseover="currentSlide(2)">
-                                    Transport Layer Security (TLS) protocol is used.
-                                    A handshake is done between client side and server side. (Image 2)
+                                    With HTTPS, the Transport Layer Security (TLS) protocol is used.
+                                    A handshake is done between the client side and the server side. (Image 2)
                                     </a>
                                 </li>
                                 
                                 <li>
                                     <a href="#" class="show-image" onmouseover="currentSlide(3)">
-                                    All the data transferred are encrypted using hashing algorithm. 
+                                   All the data transferred are encrypted using a hashing algorithm.  
                                     Even if the data packets are sniffed, they cannot be understandable because they are some nonsensical characters. (Image 3)
                                     </a>
                                 </li>
